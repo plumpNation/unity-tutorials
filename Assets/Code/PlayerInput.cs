@@ -26,8 +26,13 @@ public class PlayerInput : MonoBehaviour {
 
     bool pressed = Input.GetButtonDown("Pulse");
 
-    moveComponent.Move(moveX, moveY);
-    moveComponent.Rotate(rotateX, rotateY);
+    if (moveX != 0 || moveY != 0) {
+      moveComponent.Move(moveX, moveY);
+    }
+
+    if (rotateX != 0 || rotateY != 0) {
+      moveComponent.Rotate(rotateX, rotateY);
+    }
 
     if (pressed) {
       Pulse();
