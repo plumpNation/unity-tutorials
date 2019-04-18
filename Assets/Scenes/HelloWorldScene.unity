@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 920688870}
   - component: {fileID: 920688869}
   - component: {fileID: 920688873}
+  - component: {fileID: 920688874}
   m_Layer: 0
   m_Name: Cube1
   m_TagString: Untagged
@@ -377,12 +378,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477fe8c118ed34e6fa4232a05afe2a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 1, y: 1, z: 1}
-  rotateX: 0.2
-  rotateY: 1
-  rotateZ: 2.5
-  currentScale: 1
-  scaleChangePerFrame: 0.001
   speed: 1
-  useSpeed: 1
-  transformSpace: 0
+  scaleToTime: 0
+--- !u!114 &920688874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 920688868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb7752770a774581b52bceff0b1f5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
